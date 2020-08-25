@@ -1,4 +1,4 @@
-Create a file
-Duplicate a file
-Delete original file
-Copy and paste the git commit url
+1.Create a file
+2.Duplicate a file
+3.Delete original file
+4.Copy and paste the git commit url
