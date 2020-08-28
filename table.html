@@ -2,17 +2,23 @@
 <head>
 <style>
 
-table, th, td {
-   width:30%;
-   height:40%;
-   outline-style: groove;
-    margin-left: auto;
-    margin-right: auto;
+table, th {
+   border-collapse: collapse;
+   width:20%;
+   height:30%;
+    border: 1px solid black;
+   margin-left: auto;
+    margin-right: auto; 
+}
+td {
+   width:20%;
+   height:50%;
 }
 th {
   padding: 5px;
   text-align: center;
 }
+tr:nth-child(even) {background-color: #b8b6b6;}
 h1{
 text-align: center;
 text-color: brown;
@@ -20,7 +26,7 @@ text-color: brown;
 </head>
 <body>
 <h1>Marks</h1>
-<table style="align-content: center; width: fit-content;" bordercolor="yellow">
+<table style="align-content: center; width: fit-content;" >
   <caption><b>Semester Marks</b></caption>
   <tr>
     <th><b>Subject</b></th>
