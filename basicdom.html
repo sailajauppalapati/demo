@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <body>
-<p>Click the button to know the data</p>
-<button onclick="displayDate()">Date</button>
+<p>As the inbox starts from '0'</p>
+<button onclick="myFunction()">Words</button>
+<p id="demo"></p>
 <script>
-function displayDate(){
-document.getElementById("demo").innerHTML=Date();
+function myFunction(){
+var str="HTML is the standard markup language;
+var arr=str.aplit(" ");
+document.getElementById("demo").innerHTML=arr[4]+"</br>"+arr[6]+"</br>arr[9]+"</br>;
 }
 </script>
-<p id="demo"></p>
 </body>
 </html>
