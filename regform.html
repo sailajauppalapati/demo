@@ -29,7 +29,7 @@
 form{text-align:center;}
 </style>
 
-<form >
+<form action="details.html">
   <label for="fname"><b>First name :</b></label>
 
   <input type="text" id="txtName" id="fname" name="fname"><br><br></td></tr>
@@ -60,28 +60,39 @@ form{text-align:center;}
   </textarea><br><br>
   <p><Strong>Subject Interests:</Strong></p>
 
-  <input type="checkbox" id="mc" name="mc" value="mc">
+  <input type="checkbox" id="scc" name="mc" value="mc">
   <label for="mc"><b> Mobile Communications</b></label><br>
 
-  <input type="checkbox" id="ns" name="ns" value="ns">
+  <input type="checkbox" id="scc" name="ns" value="ns">
   <label for="ns"> <b>Network Security</b></label><br>
 
-  <input type="checkbox" id="sc" name="sc" value="sc">
+  <input type="checkbox" id="scc" name="sc" value="sc">
   <label for="sc"> <b>Search Engines</b></label><br><br>
 
-  <input type="submit" value="Submit" onclick="Validate()"/>
+  <input type="submit" value="Submit" onclick="Val()"/>
 
 </form> 
 <script type="text/javascript">
-    function Validate() {
-        var regex = /^[A-Za-z]+$/
-        var isValid = regex.test(document.getElementById("txtName").value);
+    function Val() {
+        var letter =  /^[0-9]+$/;
+        var isValid = letter.test(document.getElementById("phno").value);
         if (!isValid) {
-            alert("Only Alphabets are allowed");
+            alert("It Should contain only numbers");
         }
- 
-        return isValid;
+    var checkboxs=document.getElementsByName("scc");
+    var okay=false;
+    for(var i=0,l=checkboxs.length;i<1;i++)
+    {
+        if(checkboxs[i].checked)
+        {
+            okay=true;
+            break;
+        }
     }
+    if(okay){
+}
+    else alert("Please check a checkbox");
+}
 </script>
 </body>
 </html>
