@@ -1,23 +1,88 @@
-<!DOCTYPE html>
 <html>
 <head>
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Paragraph changed...";
+<style>
+
+table, th {
+   border-collapse: collapse;
+   width:20%;
+   height:30%;
+    border: 1px solid black;
+   margin-left: auto;
+    margin-right: auto; 
 }
-</script>
+td {
+   width:20%;
+   height:50%;
+}
+th {
+  padding: 5px;
+  text-align: center;
+}
+tr:nth-child(even) {background-color: #b8b6b6;}
+h1{
+text-align: center;
+text-color: brown;
+</style>
 </head>
 <body>
+<h1>Marks</h1>
+<table style="align-content: center; width: fit-content;" >
+  <caption><b>Semester Marks</b></caption>
+  <tr>
+    <th><b>Subject</b></th>
+    <th><b>Marks</b></th>
+  </tr>
+  <tr>
+    <td ><b>MPI</b></td>
+    <td style="text-align:right"><b>84</b></td>
+  </tr>
+  <tr >
+    <td><b>OR</b></td>
+    <td style="text-align:right"><b>90</b></td>
+  </tr>
+  <tr>
+    <td><b>AI</b></td>
+    <td style="text-align:right"><b>95</b></td>
+  </tr>
+  <tr>
+    <td><b>DMT</b></td>
+    <td style="text-align:right"><b>94</b></td>
+  </tr>
+  <tr>
+    <td><b>CN</b></td>
+    <td style="text-align:right"><b>96</b></td>
+  </tr>
+  <tr>
+    <td><b>SUP</b></td>
+    <td style="text-align:right"><b>97</b></td>
+  </tr>
+  <tr>
+  	<td><b>Total<b></td>
+  	<td style="text-align:right; color: blue"><b><p id="demo"></p></b>
+  	</tr>
+  <tr>
+  	<td><b>Average</b></td>
+  	<td style="text-align:right; color: blue"><b><p id="demo1"></p></b></td>
+  </tr>
+</table>
+<script>
+var x, y, z,a,b,c,s;  
+x = 84;       
+y = 90; 
+z = 95;
+a = 94;
+b = 96;
+c = 97;       
+s = a+b+c+x+y+z;
 
-<h2>JavaScript in Head</h2>
+document.getElementById("demo").innerHTML =s; 
+	var h,s;  
+	h = s/6;
+document.getElementById("demo1").innerHTML =h; 	 
 
-<p id="demo">A Paragraph.</p>
-
-<button type="button" onclick="myFunction()">Try it</button>
-
+</script>
 </body>
-</html> 
-
+</html>
 
 
 
